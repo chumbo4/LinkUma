@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/title_calendar_view"
+        android:layout_weight="0.45"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="#fad20b"
+        android:text="Events"
+        android:weightSum="1.05"/>
+    <!-- -->
+    <com.tyczj.extendedcalendarview.ExtendedCalendarView
+        android:id="@+id/calendar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:layout_weight="0.15"
+        android:contextClickable="false" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="See Day"
+        android:id="@+id/go_to_day_button"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="goToDay"
+        android:layout_weight="0.45"
+        style="@style/AppTheme"
+        android:background="#fad20b"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:shadowColor="#f90f0f"
+        android:singleLine="true" />
+</LinearLayout>

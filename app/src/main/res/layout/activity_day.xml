@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chumboapp.linkuma.controllers.DayActivity"
+    android:orientation="vertical"
+    android:weightSum="7">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/day_text_view"
+        android:background="#fad20b"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="Day"
+        android:layout_gravity="center"
+        android:layout_weight="6"
+        android:layout_marginTop="25dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/day_list_view"
+        android:layout_centerHorizontal="true"
+        android:choiceMode="singleChoice"
+        tools:listitem="@android:layout/simple_list_item_1"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp" />
+
+</LinearLayout>
