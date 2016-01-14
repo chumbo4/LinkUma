@@ -33,7 +33,7 @@ public class notification extends Service {
 
         Notification mNotification = new Notification.Builder(this).
                 setContentTitle("Nuevos eventos").
-                setContentText("¡Echalé un vistazo a tus eventos de mañana!").
+                setContentText("¡Échale un vistazo a tus eventos de mañana!").
                 setSmallIcon(R.drawable.logo_link_small).
                 setContentIntent(pendingIntent).build();
 

@@ -51,8 +51,10 @@ public class DayActivity extends AppCompatActivity {
         mlistView = (ListView) findViewById(R.id.day_list_view);
         Cursor mCursor = getContentResolver().query(CalendarProvider.CONTENT_URI, new String[]{CalendarProvider.EVENT},
                 CalendarProvider.LOCATION + " LIKE ?", new String[]{day + SEPARATOR + "%"}, null);
+        String empty_day = getResources().getString(R.string.empty_day);
         if (mCursor == null) {
-            Toast.makeText(DayActivity.this, "Empty day",
+
+            Toast.makeText(DayActivity.this, empty_day,
                     Toast.LENGTH_LONG).show();
         } else {
             int index = mCursor.getColumnIndex(CalendarProvider.EVENT);
@@ -63,7 +65,7 @@ public class DayActivity extends AppCompatActivity {
                 values.add(newWord);
             }
             if (values.size() == 0) {
-                Toast.makeText(DayActivity.this, "Empty day",
+                Toast.makeText(DayActivity.this, empty_day,
                         Toast.LENGTH_LONG).show();
             }
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,

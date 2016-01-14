@@ -27,8 +27,8 @@ public class EventActivity extends AppCompatActivity {
         TextView mLocationView = (TextView) findViewById(R.id.direction_event_view);
 
         Bundle extras = getIntent().getExtras();
-        String name = "no event";
-        String day = "no day";
+        String name =   getResources().getString(R.string.no_event);
+        String day = getResources().getString(R.string.no_day);
         if (extras != null) {
             name = extras.getString("CHUMBOAPP_NAME");
             day = extras.getString("CHUMBOAPP_DATE");

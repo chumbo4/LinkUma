@@ -14,7 +14,7 @@
         android:textColor="#ffffff"
         android:gravity="center"
         android:background="#fad20b"
-        android:text="Events"
+        android:text="@string/events"
         android:weightSum="1.05"/>
     <!-- -->
     <com.tyczj.extendedcalendarview.ExtendedCalendarView
@@ -30,15 +30,12 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="See Day"
+        android:text="@string/see_day"
         android:id="@+id/go_to_day_button"
         android:layout_gravity="center_horizontal|bottom"
         android:onClick="goToDay"
         android:layout_weight="0.45"
-        style="@style/AppTheme"
         android:background="#fad20b"
         android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:shadowColor="#f90f0f"
-        android:singleLine="true" />
+        android:textStyle="bold" />
 </LinearLayout>

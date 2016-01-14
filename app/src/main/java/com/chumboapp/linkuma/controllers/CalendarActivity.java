@@ -41,6 +41,8 @@ public class CalendarActivity extends AppCompatActivity {
     private int y = 0;
     private String date = "";
     private static final int ALARM_REQUEST_CODE = 1;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +53,6 @@ public class CalendarActivity extends AppCompatActivity {
             @Override
             public void onDayClicked(AdapterView<?> adapter, View view,
                                      int position, long id, Day day) {
-
                 d = day.getDay();
                 m = day.getMonth() + 1;
                 y = day.getYear();
@@ -67,37 +68,30 @@ public class CalendarActivity extends AppCompatActivity {
             }
     });
 
-
-
         //TODO CREATE ALARMN_MANAGER
-
-        Intent myIntent = new Intent(this,notification.class);
+      /*  Intent myIntent = new Intent(this,notification.class);
         AlarmManager alarmMgr = (AlarmManager)getSystemService(ALARM_SERVICE);
         PendingIntent pendingIntent = PendingIntent.getService(this, 0, myIntent, 0);
-        // Set the alarm to start at 8:30 a.m.
+        // Set the alarm to start at 22:00.
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
-        calendar.set(Calendar.HOUR_OF_DAY, 22);
-        calendar.set(Calendar.MINUTE, 35);
-        calendar.set(Calendar.SECOND, 00);
-        alarmMgr.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
-                AlarmManager.INTERVAL_DAY, pendingIntent);
-
+        calendar.set(Calendar.HOUR_OF_DAY, 14);
+        calendar.set(Calendar.MINUTE, 29);
+        alarmMgr.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
+                24 * 60 * 60 * 1000, pendingIntent);*/
     }
 
 
     public void goToDay(View v){
-
         if (date == ""){
-            Toast.makeText(CalendarActivity.this, "Select a day",
+            String select = getResources().getString(R.string.select_day);
+            Toast.makeText(CalendarActivity.this, select,
                     Toast.LENGTH_LONG).show();
         } else{
             Intent intent = new Intent(CalendarActivity.this, DayActivity.class);
             intent.putExtra("CHUMBOAPP_DAY", date);
-            intent.putExtra("na","na");
             startActivity(intent);
         }
     }
-
 
 }

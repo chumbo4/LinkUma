@@ -1,10 +1,47 @@
 <resources>
-    <string name="app_name">LinkUma</string>
-    <string name="monday">MON</string>
-    <string name="tuesday">TUE</string>
-    <string name="wednesday">WED</string>
-    <string name="thursday">THU</string>
-    <string name="friday">FRI</string>
-    <string name="saturday">SAT</string>
-    <string name="sunday">SUN</string>
+
+    <!-- title -->
+        <string name="app_name">LinkUma</string>
+
+
+    <!-- Layouts -->
+        <!-- Actitivy day -->
+        <string name="day">day</string>
+
+        <!-- Actitivy event -->
+        <string name="name">Name</string>
+        <string name="description">Description</string>
+        <string name="location">Location</string>
+
+        <!-- Actitivy load -->
+        <string name="developed">Developed by ChumboApp</string>
+
+        <!-- Calenar layout -->
+        <string name="events">Events</string>
+        <string name="see_day">See day</string>
+
+        <string name="monday">MON</string>
+        <string name="tuesday">TUE</string>
+        <string name="wednesday">WED</string>
+        <string name="thursday">THU</string>
+        <string name="friday">FRI</string>
+        <string name="saturday">SAT</string>
+        <string name="sunday">SUN</string>
+
+
+    <!--Activities -->
+        <!-- Calendar activity -->
+        <string name="select_day">Select a day</string>
+
+        <!-- Day activity -->
+        <string name="empty_day">Empty day</string>
+
+        <!-- Event activity -->
+        <string name="no_day">No day</string>
+        <string name="no_event">No event</string>
+
+    <!-- Notification -->
+        <string name="notification_title">New events</string>
+        <string name="notification_text">You can see your new events for tomorow!</string>
+
 </resources>

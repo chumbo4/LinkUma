@@ -15,7 +15,7 @@
         android:background="#fad20b"
         android:gravity="center"
         android:textColor="#ffffff"
-        android:text="Day"
+        android:text="@string/day"
         android:layout_gravity="center"
         android:layout_weight="6"
         android:layout_marginTop="25dp" />

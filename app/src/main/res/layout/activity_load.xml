@@ -24,7 +24,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Developed by ChumboApp"
+        android:text="@string/developed"
         android:id="@+id/textView"
         android:layout_weight="10"
         android:gravity="bottom|right"

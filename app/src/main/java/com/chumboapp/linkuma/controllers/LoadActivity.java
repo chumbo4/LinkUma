@@ -49,63 +49,83 @@ public class LoadActivity extends AppCompatActivity {
 
         ContentValues values = new ContentValues();
         values.put(CalendarProvider.COLOR, Event.COLOR_YELLOW);
-        values.put(CalendarProvider.DESCRIPTION, "po comiendo, como va a ser si no," +
-                "que to hay que decirlo hay que decirlo to, pip pam pum, desmayao, yo no me escuendo" +
-                "unos lapillos de vino, quiere sentila en el pesxho cristian," +
-                "no me diste ni media, nome diste ni mierda, en la vida hay 5 derechos innegables al ser " +
-                "humano, 1 es la vivienda otro es la dignidad otro la ropa y en fin de los otros dos" +
-                " no me acuerdo"+SEPARATOR+"El burgo");
-        values.put(CalendarProvider.LOCATION, "04/01/2016"+SEPARATOR+"01:01-03:04");
-        values.put(CalendarProvider.EVENT, "Comer chumbos");
+        values.put(CalendarProvider.DESCRIPTION, "Se dará la bienvenida a los candidatos " +
+                "seleccionados para participar en el Programa Yuzz de jóvenes emprendedores."
+                +SEPARATOR+"Link by UMA-Atech, 3ª planta");
+        values.put(CalendarProvider.LOCATION, "14/01/2016"+SEPARATOR+"16:00-19:00");
+        values.put(CalendarProvider.EVENT, "Bienvenida a participantes del Programa Yuzz");
         Calendar cal = Calendar.getInstance();
         TimeZone tz = TimeZone.getDefault();
-        cal.set(2016, 0, 04, 01, 01);
+        cal.set(2016, 0, 14, 16, 00);
         int dayJulian = Time.getJulianDay(cal.getTimeInMillis(), TimeUnit.MILLISECONDS.toSeconds(tz.getOffset(cal.getTimeInMillis())));
         values.put(CalendarProvider.START, cal.getTimeInMillis());
         values.put(CalendarProvider.START_DAY, dayJulian);
-        cal.set(2016, 00, 04, 01, 01);
+        cal.set(2016, 00, 14, 19, 00);
         int endDayJulian = Time.getJulianDay(cal.getTimeInMillis(), TimeUnit.MILLISECONDS.toSeconds(tz.getOffset(cal.getTimeInMillis())));
         values.put(CalendarProvider.END, cal.getTimeInMillis());
         values.put(CalendarProvider.END_DAY, endDayJulian);
 
         ContentValues values1 = new ContentValues();
         values1.put(CalendarProvider.COLOR, Event.COLOR_YELLOW);
-        values1.put(CalendarProvider.DESCRIPTION, "Some Description Some Description Some " +
-                "Description Some Description Some Description Some Description Some Description" +
-                " Some Description Some Description Some Description Some Description" +
-                " Some Description Some Description Some Description"+SEPARATOR+"Marbella");
-        values1.put(CalendarProvider.LOCATION, "14/01/2016"+SEPARATOR+"10:01-14:00");
-        values1.put(CalendarProvider.EVENT, "Cumple");
-
-
-        cal.set(2016, 0, 14, 0, 01);
+        values1.put(CalendarProvider.DESCRIPTION, "Aprende a hacer aquello que quieres hacer sin que nada te frene\n" +
+                "Disfruta más de lo que haces en tu vida\n" +
+                "Inscríbete en: www.nayadepsicologos.com/inscripcion"+SEPARATOR+"Link by UMA-Atech, 3ª planta");
+        values1.put(CalendarProvider.LOCATION, "14/01/2016"+SEPARATOR+"17:00-21:00");
+        values1.put(CalendarProvider.EVENT, "Curso Iniciación en Mindfulness");
+        cal.set(2016, 0, 14, 17, 00);
         dayJulian = Time.getJulianDay(cal.getTimeInMillis(), TimeUnit.MILLISECONDS.toSeconds(tz.getOffset(cal.getTimeInMillis())));
         values1.put(CalendarProvider.START, cal.getTimeInMillis());
         values1.put(CalendarProvider.START_DAY, dayJulian);
-        cal.set(2016, 0, 14, 0, 01);
+        cal.set(2016, 0, 14, 21, 00);
         endDayJulian = Time.getJulianDay(cal.getTimeInMillis(), TimeUnit.MILLISECONDS.toSeconds(tz.getOffset(cal.getTimeInMillis())));
         values1.put(CalendarProvider.END, cal.getTimeInMillis());
         values1.put(CalendarProvider.END_DAY, endDayJulian);
 
+
+
         ContentValues values2 = new ContentValues();
         values2.put(CalendarProvider.COLOR, Event.COLOR_YELLOW);
-        values2.put(CalendarProvider.DESCRIPTION, "Description"+SEPARATOR+"Marbella");
-        values2.put(CalendarProvider.LOCATION, "04/01/2016"+SEPARATOR+"11:01-11:30");
-        values2.put(CalendarProvider.EVENT, "pim pam pum");
-
-
-        cal.set(2016, 0, 04, 11, 01);
+        values2.put(CalendarProvider.DESCRIPTION, "Clases de la asignatura “Emprendedores en Ingeniería” perteneciente al Máster de Ingeniería Industrial. La docencia se impartirà todos los viernes en la sala 201 de Link by UMA-ATech, en horario de 8.00 a 9.15 am.\n" +
+                "\n" +
+                "Coordinador del Máster, Antonio Ruiz Molina. Dpto. Economía y Administración de Empresas Universidad de Málaga."+SEPARATOR+"Link By UMA-Atech, 2ª planta\n" +
+                "Edificio The Green Ray, Avenida Louis Pasteur 47 (ampliación del Campus Teatinos) \n" +
+                "Málaga, Málaga");
+        values2.put(CalendarProvider.LOCATION, "15/01/2016"+SEPARATOR+"08:00-09:30");
+        values2.put(CalendarProvider.EVENT, "Emprendedores en la Ingeniería");
+        cal.set(2016, 0, 15, 8, 00);
         dayJulian = Time.getJulianDay(cal.getTimeInMillis(), TimeUnit.MILLISECONDS.toSeconds(tz.getOffset(cal.getTimeInMillis())));
         values2.put(CalendarProvider.START, cal.getTimeInMillis());
         values2.put(CalendarProvider.START_DAY, dayJulian);
-        cal.set(2016, 0, 04, 11, 01);
+        cal.set(2016, 0, 15, 9, 30);
         endDayJulian = Time.getJulianDay(cal.getTimeInMillis(), TimeUnit.MILLISECONDS.toSeconds(tz.getOffset(cal.getTimeInMillis())));
         values2.put(CalendarProvider.END, cal.getTimeInMillis());
         values2.put(CalendarProvider.END_DAY, endDayJulian);
 
+
+        ContentValues values3 = new ContentValues();
+        values3.put(CalendarProvider.COLOR, Event.COLOR_YELLOW);
+        values3.put(CalendarProvider.DESCRIPTION, "La sexta sesión abordará los siguientes temas:\n" +
+                "\n" +
+                "10.00 – 11.30 h “El empresario con formación de ingeniero”. D. Juan Castillo Rosa. Empresario. Profesor del Departamento de Ingeniería Eléctrica de la ETSII. Universidad de Málaga."+SEPARATOR+"Link By UMA-Atech, 2ª planta\n" +
+                "Edificio The Green Ray, Avenida Louis Pasteur 47 (ampliación del Campus Teatinos) \n" +
+                "Málaga, Málaga");
+        values3.put(CalendarProvider.LOCATION, "15/01/2016"+SEPARATOR+"10:00-11:30");
+        values3.put(CalendarProvider.EVENT, "III Taller de Emprendimiento en la práctica – ETS Ingeniería Industrial");
+        cal.set(2016, 0, 15, 10, 00);
+        dayJulian = Time.getJulianDay(cal.getTimeInMillis(), TimeUnit.MILLISECONDS.toSeconds(tz.getOffset(cal.getTimeInMillis())));
+        values3.put(CalendarProvider.START, cal.getTimeInMillis());
+        values3.put(CalendarProvider.START_DAY, dayJulian);
+        cal.set(2016, 0, 15, 11, 30);
+        endDayJulian = Time.getJulianDay(cal.getTimeInMillis(), TimeUnit.MILLISECONDS.toSeconds(tz.getOffset(cal.getTimeInMillis())));
+        values3.put(CalendarProvider.END, cal.getTimeInMillis());
+        values3.put(CalendarProvider.END_DAY, endDayJulian);
+
+
+
         Uri uri = getContentResolver().insert(CalendarProvider.CONTENT_URI, values);
         getContentResolver().insert(CalendarProvider.CONTENT_URI, values1);
         getContentResolver().insert(CalendarProvider.CONTENT_URI, values2);
+        getContentResolver().insert(CalendarProvider.CONTENT_URI, values3);
 
         new Handler().postDelayed(new Runnable() {
             public void run() {
