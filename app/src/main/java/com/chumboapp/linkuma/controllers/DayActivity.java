@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.format.Time;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
@@ -38,12 +39,14 @@ public class DayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_day);
+        // TODO Ocultar barra de título
 
         Bundle extras = getIntent().getExtras();
         String day = "no day";
         if (extras != null) {
             day = extras.getString("CHUMBOAPP_DAY");
         }
+        Log.i("Day",day);
         mDayView = (TextView) findViewById(R.id.day_text_view);
         mDayView.setText(day);
 

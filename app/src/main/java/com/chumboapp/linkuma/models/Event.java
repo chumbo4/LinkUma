@@ -6,7 +6,6 @@ package com.chumboapp.linkuma.models;
 public class Event {
 
     private String mName = null;
-
     private String mDateStart = null; // FORMAT YYYY/MM/DD
     private String mDateEnd = null;
     private String mHourStart = null; // FORMAT HH:mm
@@ -121,4 +120,5 @@ public class Event {
     public void setmName(String mName) {
         this.mName = mName;
     }
+
 }

@@ -1,5 +1,6 @@
 package com.tyczj.extendedcalendarview;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -37,7 +38,7 @@ public class CalendarProvider extends ContentProvider {
 	public static final String START_DAY = "start_day";
 	public static final String END_DAY = "end_day";
 	public static final String COLOR = "color";
-	
+
 	private static final HashMap<String, String> mMap;
     private DatabaseHelper DBHelper;
     private SQLiteDatabase db;
@@ -67,7 +68,7 @@ public class CalendarProvider extends ContentProvider {
         }
         
     	private void createTables(SQLiteDatabase db){
-    		db.execSQL("CREATE TABLE " + EVENTS_TABLE + "(" + ID + " integer primary key autoincrement, " +
+			db.execSQL("CREATE TABLE " + EVENTS_TABLE + "(" + ID + " integer primary key autoincrement, " +
     				EVENT + " TEXT, " + LOCATION + " TEXT, " + DESCRIPTION + " TEXT, "
     				+ START + " INTEGER, "+ END + " INTEGER, " + START_DAY + " INTEGER, " + END_DAY + " INTEGER, " + COLOR +" INTEGER);");
     	}

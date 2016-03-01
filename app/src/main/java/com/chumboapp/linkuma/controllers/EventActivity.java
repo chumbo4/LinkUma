@@ -4,6 +4,7 @@ import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Window;
 import android.widget.TextView;
 
 import com.chumboapp.linkuma.R;
@@ -18,6 +19,7 @@ public class EventActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event);
+        // TODO Ocultar barra de título
 
         TextView mNameView = (TextView) findViewById(R.id.name_event_view);
         TextView mDayView = (TextView) findViewById(R.id.date_start_event_view);

@@ -10,7 +10,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.format.Time;
+import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.CalendarView;
 import android.widget.ImageView;
@@ -47,6 +49,7 @@ public class CalendarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calendar_layout);
+        // TODO Ocultar barra de título
 
         mCalendar = (ExtendedCalendarView)findViewById(R.id.calendar);
         mCalendar.setOnDayClickListener(new ExtendedCalendarView.OnDayClickListener() {
@@ -90,6 +93,7 @@ public class CalendarActivity extends AppCompatActivity {
         } else{
             Intent intent = new Intent(CalendarActivity.this, DayActivity.class);
             intent.putExtra("CHUMBOAPP_DAY", date);
+            Log.i("fecha", date);
             startActivity(intent);
         }
     }
